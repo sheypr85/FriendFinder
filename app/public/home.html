@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Survey</title>
+  <title>FriendFinder</title>
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 </head>
 
 <body>
 
-    <div class="container">
-  
-      <div class="jumbotron">
-        <h1 class="text-center"><span class="fa fa-fire"></span>FRIEND FINDER</h1>
-        <hr>
-        <h2 class="text-center">TESTING!</h2>
-        <br>
-  
-        <!-- <div class="text-center">
-          <a href="/tables"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> View Tables</button></a>
-          <a href="/reserve"><button class="btn btn-lg btn-danger"><span class="fa fa-credit-card"></span> Make Reservation</button></a>
-        </div>
-   -->
-      </div>
-  
-      <footer class="footer">
-        <div class="container">
-          <p><a href="/api/friends">API Friends Link</a> 
-        </div>
-      </footer>
-  
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1><i class="fa fa-comments" aria-hidden="true"></i>Friend Finder</h1>
+      <hr>
+      <h2>Answer some questions to find FRIENDS you are compatible with </h2>
+      <br>
+      <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4"><a href="/survey"><button type="button" class="btn btn-lg btn-info"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>
+            </div>
+            <div class="col-md-2"></div>
+        </div> 
+        <div class="col-md-4"></div>
     </div>
-  
-  
-  </body>
-  </html>
+     
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="#">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+
+</body>
+
+</html>

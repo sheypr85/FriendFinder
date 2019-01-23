@@ -2,48 +2,144 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>FriendFinder</title>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
 
-  <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-  <!-- Font Awesome Glyphicons -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-  <!-- Chosen -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <!-- Chosen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 </head>
 
 
 <body>
-
     <div class="container">
-  
-      <div class="jumbotron">
-        <h1 class="text-center"><span class="fa fa-fire"></span>QUESTIONS</h1>
-        <hr>
-        <h2 class="text-center">are we there yet?</h2>
-        <br>
-  
-        <!-- <div class="text-center">
-          <a href="/tables"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> View Tables</button></a>
-          <a href="/reserve"><button class="btn btn-lg btn-danger"><span class="fa fa-credit-card"></span> Make Reservation</button></a>
+        <div class="jumbotron">
+            <h1 class="text-center"><span class="fa fa-fire"></span>SURVEY</h1>
+            <hr>
+            <h2 class="text-center">are we there yet?</h2>
+            <br>
+            <div class="row">
+                <div class="col-md-11">
+                </div>
+                <form id="formQuestions">
+                    <div class="form-group">
+                        <label for="Select1">Going to the beach makes me happy and relaxed</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1(Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5(Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">Going to the GYM everyday is whay I like to do</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1(Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5(Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">I like to NETFLIX and chill every now and then</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1(Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5(Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">I Enjoy Going on Hikes and enjoy nature.</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1(Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5(Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">The Right kind of Music can make you smile</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1(Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5(Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">Going to Diner and Movie is a perfect kind of date.</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1(Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5(Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">I would rather stay home that go camping!</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1(Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5(Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">I love to Travel and discover new places!</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1(Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5(Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">I like enjoy coming up with new adventures and stuff to do</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1(Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5(Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">Coffee Makes Me Happy!</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1(Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5(Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
         </div>
-   -->
-      </div>
-  
-      <footer class="footer">
-        <div class="container">
-          <p><a href="/api/friends">API Friends Link</a> 
-        </div>
-      </footer>
-  
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends Link</a>
+            </div>
+        </footer>
     </div>
-  
-  
-  </body>
+
+</body>
