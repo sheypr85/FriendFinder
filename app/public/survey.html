@@ -28,110 +28,118 @@
             <h2 class="text-center">are we there yet?</h2>
             <br>
             <div class="row">
-                <div class="col-md-11">
+                <div class="form-group">
+                    <label for="Name">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
                 </div>
+                <div class="form-group">
+                    <label for="Photo">Your Picture</label>
+                    <input type="text" class="form-control" id="picture" placeholder="Picture">
+                </div>
+                <br>
+
                 <form id="formQuestions">
                     <div class="form-group">
                         <label for="Select1">Going to the beach makes me happy and relaxed</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1(Strongly Disagree)</option>
+                        <select class="form-control" id="q1">
+                            <option>1 (Strongly Disagree)</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
-                            <option>5(Strongly Agree)</option>
+                            <option>5 (Strongly Agree)</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="Select1">Going to the GYM everyday is whay I like to do</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1(Strongly Disagree)</option>
+                        <select class="form-control" id="q2">
+                            <option>1 (Strongly Disagree)</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
-                            <option>5(Strongly Agree)</option>
+                            <option>5 (Strongly Agree)</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="Select1">I like to NETFLIX and chill every now and then</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1(Strongly Disagree)</option>
+                        <select class="form-control" id="q3">
+                            <option>1 (Strongly Disagree)</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
-                            <option>5(Strongly Agree)</option>
+                            <option>5 (Strongly Agree)</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="Select1">I Enjoy Going on Hikes and enjoy nature.</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1(Strongly Disagree)</option>
+                        <select class="form-control" id="q4">
+                            <option>1 (Strongly Disagree)</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
-                            <option>5(Strongly Agree)</option>
+                            <option>5 (Strongly Agree)</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="Select1">The Right kind of Music can make you smile</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1(Strongly Disagree)</option>
+                        <select class="form-control" id="q5">
+                            <option>1 (Strongly Disagree)</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
-                            <option>5(Strongly Agree)</option>
+                            <option>5 (Strongly Agree)</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="Select1">Going to Diner and Movie is a perfect kind of date.</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1(Strongly Disagree)</option>
+                        <select class="form-control" id="q6">
+                            <option>1 (Strongly Disagree)</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
-                            <option>5(Strongly Agree)</option>
+                            <option>5 (Strongly Agree)</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="Select1">I would rather stay home that go camping!</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1(Strongly Disagree)</option>
+                        <select class="form-control" id="q7">
+                            <option>1 (Strongly Disagree)</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
-                            <option>5(Strongly Agree)</option>
+                            <option>5 (Strongly Agree)</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="Select1">I love to Travel and discover new places!</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1(Strongly Disagree)</option>
+                        <select class="form-control" id="q8">
+                            <option>1 (Strongly Disagree)</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
-                            <option>5(Strongly Agree)</option>
+                            <option>5 (Strongly Agree)</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="Select1">I like enjoy coming up with new adventures and stuff to do</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1(Strongly Disagree)</option>
+                        <select class="form-control" id="q9">
+                            <option>1 (Strongly Disagree)</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
-                            <option>5(Strongly Agree)</option>
+                            <option>5 (Strongly Agree)</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="Select1">Coffee Makes Me Happy!</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1(Strongly Disagree)</option>
+                        <select class="form-control" id="q10">
+                            <option>1 (Strongly Disagree)</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
-                            <option>5(Strongly Agree)</option>
+                            <option>5 (Strongly Agree)</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button id="submit" type="submit" class="btn btn-default">Submit</button>
                 </form>
             </div>
         </div>
@@ -141,5 +149,49 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript">
+        //Checks that everything is filled out before submitting
+        function validateAnswer() {
+            var validAnswer = true;
+            $(".form-control").each(function () {
+                if ($(this).val() === "") {
+                    validAnswer = false;
+                }
+            });
+            return validAnswer
+        }
 
+
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            if (validateAnswer()) {
+                var userInput = {
+                    name: $("#name").val(),
+                    photo: $("#picture").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+                
+                // $.post("/api/friends", userInput, function(data) {})
+
+
+            } else {
+                alert("Please fill out the survey before submitting!");
+            };
+        });
+
+
+
+    </script>
 </body>
