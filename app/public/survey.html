@@ -41,7 +41,7 @@
                     <div class="form-group">
                         <label for="Select1">Going to the beach makes me happy and relaxed</label>
                         <select class="form-control" id="q1">
-                            <option></option>
+                            <option value="" selected>Choose an answer</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -52,7 +52,7 @@
                     <div class="form-group">
                         <label for="Select1">Going to the GYM everyday is whay I like to do</label>
                         <select class="form-control" id="q2">
-                            <option></option>
+                            <option value="" selected>Choose an answer</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -63,7 +63,7 @@
                     <div class="form-group">
                         <label for="Select1">I like to NETFLIX and chill every now and then</label>
                         <select class="form-control" id="q3">
-                            <option></option>
+                            <option value="" selected>Choose an answer</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -74,7 +74,7 @@
                     <div class="form-group">
                         <label for="Select1">I Enjoy Going on Hikes and enjoy nature.</label>
                         <select class="form-control" id="q4">
-                            <option></option>
+                            <option value="" selected>Choose an answer</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -85,7 +85,7 @@
                     <div class="form-group">
                         <label for="Select1">The Right kind of Music can make you smile</label>
                         <select class="form-control" id="q5">
-                            <option></option>
+                            <option value="" selected>Choose an answer</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -96,7 +96,7 @@
                     <div class="form-group">
                         <label for="Select1">Going to Diner and Movie is a perfect kind of date.</label>
                         <select class="form-control" id="q6">
-                            <option></option>
+                            <option value="" selected>Choose an answer</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -107,7 +107,7 @@
                     <div class="form-group">
                         <label for="Select1">I would rather stay home that go camping!</label>
                         <select class="form-control" id="q7">
-                            <option></option>
+                            <option value="" selected>Choose an answer</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -118,7 +118,7 @@
                     <div class="form-group">
                         <label for="Select1">I love to Travel and discover new places!</label>
                         <select class="form-control" id="q8">
-                            <option></option>
+                            <option value="" selected>Choose an answer</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -129,7 +129,7 @@
                     <div class="form-group">
                         <label for="Select1">I enjoy coming up with new adventures and stuff to do</label>
                         <select class="form-control" id="q9">
-                            <option></option>
+                            <option value="" selected>Choose an answer</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -140,7 +140,7 @@
                     <div class="form-group">
                         <label for="Select1">Coffee Makes Me Happy!</label>
                         <select class="form-control" id="q10">
-                            <option></option>
+                            <option value="" selected>Choose an answer</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -157,7 +157,47 @@
                 <p><a href="/api/friends">API Friends Link</a>
             </div>
         </footer>
+
+
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Open modal
+              </button> -->
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Here is your Match!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p id="modal-body"></p>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>  
+
+
+
     </div>
+
+
+
+
+
     <script type="text/javascript">
         //Checks that everything is filled out before submitting
         function validateAnswer() {
@@ -191,13 +231,25 @@
                         $("#q10").val()
                     ]
                 };
-        
-                $.post("/api/friends", userInput);
+
+                $.post("/api/friends", userInput, function (data) {
+                    console.log(data)
+                    if (data) {
+                        $("#modal-body").append(JSON.stringify(data));
+                        $("#myModal").modal('show');
+                    }
+                });
 
 
             } else {
                 alert("Please fill out the survey before submitting!");
             };
         });
+
     </script>
+
+
+
+
+
 </body>

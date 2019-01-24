@@ -13,10 +13,11 @@ module.exports = function(app) {
 
         console.log(newFriend)
         console.log(matchFriends(newFriend))
+        var matchFriend = matchFriends(newFriend)
 
-        friendsData.push(req.body);
 
-        res.json(friendsData)
+        friendsData.push(newFriend);
+        res.json(matchFriend)
       });
 }
 
@@ -40,7 +41,7 @@ function matchFriends(newFriend){
         }
         scoreMatch.push(friendInfo)
     }
-    
+
     sortScores(scoreMatch);
     // return scoreMatch.scores[0];
     return scoreMatch[0];
