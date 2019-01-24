@@ -40,7 +40,10 @@ function matchFriends(newFriend){
         }
         scoreMatch.push(friendInfo)
     }
+    
     sortScores(scoreMatch);
+    // return scoreMatch.scores[0];
+    return scoreMatch[0];
 
 };
 
