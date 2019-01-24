@@ -31,16 +31,25 @@ function matchFriends(newFriend){
         var resultHere = compareScores(friendsData[i].scores, newFriend.scores)
         var friendInfo = {
             name: friendsData[i].name,
-            score: resultHere
+            scores: resultHere
         }
-        console.log(friendInfo)
+        scoreMatch.push(friendInfo)
     }
+    console.log(scoreMatch);
+    sortScores(scoreMatch);
+    console.log(scoreMatch)
+}
+
+function sortScores(scoreMatch) {
+   scoreMatch.sort(function(a,b){
+       return (a.scores - b.scores)
+   })
 }
 
 
 
 var newFriend = {
-        name: "Maria",
+        name: "Hector",
         photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
         scores: [
           2,
@@ -48,7 +57,7 @@ var newFriend = {
           3,
           4,
           2,
-          3,
+          5,
           3,
           3,
           3,
