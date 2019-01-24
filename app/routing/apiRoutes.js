@@ -35,8 +35,10 @@ function matchFriends(newFriend){
     var scoreMatch = [];
     for (var i = 0; i < friendsData.length; i++) {
         var resultHere = compareScores(friendsData[i].scores, newFriend.scores)
+        var photo = friendsData[i].photo
         var friendInfo = {
             name: friendsData[i].name,
+            photo: photo,
             scores: resultHere
         }
         scoreMatch.push(friendInfo)
