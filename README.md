@@ -1,6 +1,6 @@
 # FriendFinder
 
-Frien Finder is a Survey App that lets you Find a Friend with your same interests!
+Friend Finder is a Survey App that lets you Find a Friend with your same interests!
 
 --Technologies used:
 
