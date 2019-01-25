@@ -1,8 +1,9 @@
 //Dependencies
 var path = require("path");
 
+// ROUTING //
 
-
+// HTML GET Requests
 module.exports = function(app){
   
   app.get("/survey", function(req, res) {

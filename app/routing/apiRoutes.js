@@ -1,6 +1,8 @@
+
+//Dependencies
 var friendsData = require("../data/friends");
 
-
+// ROUTING API GET Requests and POST Requests
 module.exports = function(app) {
 
     app.get("/api/friends", function(req, res) {
@@ -21,7 +23,7 @@ module.exports = function(app) {
       });
 }
 
-
+//Compare score with friends data
 function compareScores(a, b) {
     var result = 0;
     for(var i = 0; i < a.length; i++) {
@@ -45,7 +47,7 @@ function matchFriends(newFriend){
     }
 
     sortScores(scoreMatch);
-    // return scoreMatch.scores[0];
+    // return first array index and matched friend
     return scoreMatch[0];
 
 };
