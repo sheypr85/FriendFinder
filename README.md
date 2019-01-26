@@ -19,7 +19,7 @@ ___
 
 Demo:
 
-Website Page: https://friend-finder-shey.herokuapp.com/survey
+Website Page: https://friend-finder-shey.herokuapp.com/
 
 Github: https://github.com/sheypr85/FriendFinder
 
